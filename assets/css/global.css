@@ -1,3 +1,31 @@
-h1{
-    color: red;
+/* variaveis */
+:root{
+    --gree-color:#14a06f;
+    --white-color: #fff;
+    --gree-2-color:#46cbab;
+    --background-color: #f6f8fc;
+}
+
+*{
+    font-family: 'Roboto',sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+/* uso de rem para boa prática de css */
+.content{
+    padding: 1rem;
+    background-color: var(--white-color);
+    margin: 1;
+}
+
+@media screen and (min-width:762px){
+    .content{
+        max-width: 992px;
+        height: auto;
+        margin: 0 auto;
+    }  
 }
